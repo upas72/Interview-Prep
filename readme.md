@@ -30,11 +30,11 @@ O(n!) = Factorial: adding a loop for every element
 
 *Rule Book*
 > Rule 1: Always worst Case
-Rule 2: Remove Constants
-Rule 3: Drop Non-dominant terms
-Rule 4: + for steps in order,* for nested steps
-Different in puts should have different variables O(a+b)
-A and B arrays nested would be O(a*b)
+> Rule 2: Remove Constants
+> Rule 3: Drop Non-dominant terms
+> Rule 4: + for steps in order,* for nested steps
+> Different in puts should have different variables O(a+b)
+> A and B arrays nested would be O(a*b)
 
 ### What Causes Space Complexity?
 - Variables
