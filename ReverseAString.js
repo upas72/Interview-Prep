@@ -1,5 +1,9 @@
 // Reverse a String
 
+/**
+ * @param {string} str
+ * @return {string}
+ */
 const reverseString = str => {
     if(!str || typeof str !== "string") {
         return "";

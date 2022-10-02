@@ -1,5 +1,10 @@
 // [0, 3, 4, 31] [4, 6, 30] - [0, 3, 4, 4, 6, 30, 31]
 
+/**
+ * @param {number[]} array1
+ * @param {number[]} array2
+ * @return {number[]}
+ */
 const mergeArrayAndSort = (array1, array2) => {
     if(!array1 && !array2) {
         return [];

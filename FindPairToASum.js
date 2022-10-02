@@ -4,6 +4,11 @@
 // [0, 2, 9, -1] -> 8 -> True
 // [1, 0, 7, 4] -> 8 -> True
 
+/**
+ * @param {number[]} inputArray
+ * @param {number} sum
+ * @return {boolean}
+ */
 const checkForSumPair = (inputArray, sum) => {
     const tempSet = new Set([]);
     let flag = false;
