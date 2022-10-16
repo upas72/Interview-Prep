@@ -103,9 +103,41 @@ class LinkedList {
  * @return {LinkedList}
  */
 const reverseLinkList = function(list) {
-    // TODO
+    if(!list) {
+        return null;
+    }
+    if(list.head && !list.head.next) {
+        return list;
+    }
+    if(list.head && list.head.next) {
+        let leader = list.head.next;
+        let follower = list.head;
+        while(leader) {
+            follower.next = leader.next
+            leader.next = list.head
+            list.head = leader
+            leader = follower.next
+        }
+        list.tail = follower;
+        return list;
+    }
 };
 
-let list = new LinkedList(1);
-
-
+let list1 = new LinkedList(1);
+list1.push(2);
+list1.push(3);
+list1.push(4);
+list1.push(5);
+if(list1) {
+    console.log(reverseLinkList(list1).toArray() + ":" + list1.head.value + ":" + list1.tail.value);
+}
+console.log(reverseLinkList(null));
+let list2 = new LinkedList(1);
+if(list2) {
+    console.log(reverseLinkList(list2).toArray() + ":" + list2.head.value + ":" + list2.tail.value);
+}
+let list3 = new LinkedList(1);
+list3.push(2);
+if(list3) {
+    console.log(reverseLinkList(list3).toArray() + ":" + list3.head.value + ":" + list3.tail.value);
+}
